@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Js Assignment 12</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><h1 style="font-family: 'Times New Roman', Times, serif; color: #042697;">Js Assignment 12 ["Forms"]</h1></center>
+<div class="container">
+  <h2>Signup Form</h2>
+  <form onsubmit="showData(); return false;">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="output" class="result"></div>
+
+  <hr>
+  <h2>Item Details</h2>
+  <p>
+    This is a great product with limited details.
+    <span id="moreText">
+      It is durable, affordable, and comes with warranty.
+    </span>
+  </p>
+  <button onclick="readMore()">Read More</button>
+
+  <hr>
+
+  <h2>Student Form</h2>
+
+  <input type="text" id="sname" placeholder="Student Name">
+  <input type="number" id="sage" placeholder="Age">
+  <input type="text" id="sclass" placeholder="Class">
+  <button onclick="addStudent()">Add Student</button>
+
+  <table id="studentTable">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Class</th>
+      <th>Actions</th>
+    </tr>
+  </table>
+
+  <div id="editForm">
+    <h3>Edit Student</h3>
+    <input type="text" id="ename">
+    <input type="number" id="eage">
+    <input type="text" id="eclass">
+    <button onclick="updateStudent()">Update</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
